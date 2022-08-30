@@ -32,7 +32,7 @@
   Descrição
 </h1>
 
-<p align="justify"> &emsp;&emsp;&emsp;Projeto desenvolvido durante a fase final do bootcamp PanAcademy, uma parceria entre o Banco Pan e a GamaAcademy. Consiste em uma API que possibilita o gerenciamento de contas e transações em um banco fictício. O sistema permite cadastro de novos clientes, incluindo dados pessoais e dados para contato, onde o mesmo é atrelado a uma conta bancária e consegue ter acesso ao histórico de transações.
+<p align="justify"> &emsp;&emsp;&emsp;Projeto final desenvolvido para o Dev For Tech de aceleração NodeJs, uma parceria entre a Acate e a GamaAcademy. O HelpBruce tem por objetivo aproximar a comunidade dev Gama Academy, nela um usuário poderá criar um post descrevendo um problema e outros usuários poderão responder auxiliando na solução do mesmo, desta forma a aplicação vai facilitar a troca de conhecimento e a criação de network, fazendo com que todos cresçam juntos.
 </p>
 
 <h1 id="gestao-do-projeto">
@@ -339,8 +339,7 @@ Breve descrição dos endpoints da aplicação.
     </td>
     <td align="center"><a href="https://github.com/BrunoPogianMallta"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/BrunoPogianMallta" width="100px;" alt=""/><br /><sub><b>Bruno Pogian Mallta</b></sub></a><br /><a href="https://github.com/BrunoPogianMallta" title="Bruno Pogian Mallta"></a>
     </td>
-    <td align="center"><a href="https://github.com/filipelustosaf"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/filipelustosaf" width="100px;" alt=""/><br /><sub><b>Filipe Lustosa</b></sub></a><br /><a href="https://github.com/filipelustosaf" title="Filipe Lustosa"></a></td>
-    <td align="center"><a href="https://github.com/jonaslucenafilho"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/jonaslucenafilho" width="100px;" alt=""/><br /><sub><b>Jonas Lucena</b></sub></a><br /><a href="https://github.com/jonaslucenafilho" title="Jonas Lucena"></a></td>
-     <td align="center"><a href="https://github.com/mateusMBA"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/mateusMBA" width="100px;" alt=""/><br /><sub><b>Mateus Almeida</b></sub></a><br /><a href="https://github.com/mateusMBA" title="Mateus Almeida"></a></td>
+    <td align="center"><a href="https://github.com/jhonlucassilva10"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/jhonlucassilva10" width="100px;" alt=""/><br /><sub><b>Jhon Lucas</b></sub></a><br /><a href="https://github.com/jhonlucassilva10" title="Jhon Lucas"></a></td>
+    <td align="center"><a href="https://github.com/jonaslucenafilho"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/jonaslucenafilho" width="100px;" alt=""/><br /><sub><b>Giova...</b></sub></a><br /><a href="https://github.com/jonaslucenafilho" title="Jonas Lucena"></a></td>
   </tr>
 </table>
