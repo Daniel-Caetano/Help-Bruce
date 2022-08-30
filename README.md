@@ -334,7 +334,7 @@ Breve descrição dos endpoints da aplicação.
 
 <table align="center">
   <tr>
-    <td align="center"><a href="https://github.com/celsobomfim28"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/celsobomfim28" width="100px;" alt=""/><br /><sub><b>Celso Bomfim</b></sub></a><br /><a href="https://github.com/celsobomfim28" title="Celso Bomfim"></a></td>
+    <td align="center"><a href="https://github.com/Daniel-Caetano"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/Daniel-Caetano" width="100px;" alt=""/><br /><sub><b>Daniel Caetano</b></sub></a><br /><a href="https://github.com/Daniel-Caetano" title="Daniel Caetano"></a></td>
     <td align="center"><a href="https://github.com/oneyottabyte"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/oneyottabyte" width="100px;" alt=""/><br /><sub><b>Dorian Vieira</b></sub></a><br /><a href="https://github.com/oneyottabyte" title="Dorian Vieira"></a></td>
     <td align="center"><a href="https://github.com/fhilips"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/fhilips" width="100px;" alt=""/><br /><sub><b>Filipe dos Santos</b></sub></a><br /><a href="https://github.com/fhilips" title="Filipe dos Santos"></a></td>
     <td align="center"><a href="https://github.com/filipelustosaf"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/filipelustosaf" width="100px;" alt=""/><br /><sub><b>Filipe Lustosa</b></sub></a><br /><a href="https://github.com/filipelustosaf" title="Filipe Lustosa"></a></td>
