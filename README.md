@@ -3,13 +3,13 @@
   <img align="center" src="https://github.com/jonaslucenafilho/BlueBankPanAcademy/blob/main/assets/BlueBank_IMG.jpg" width="800px" />
 </p> -->
 
-![dscatalog-catalog](https://github.com/jonaslucenafilho/BlueBankPanAcademy/blob/main/assets/logo.gif)
+![dscatalog-catalog](https://github.com/Daniel-Caetano/Help-Bruce/blob/main/assets/helpbruce.gif)
 
 <!-- <h1 align="center">Helpe Bruce</h1> -->
 
 <div align="center">
 
-[![BlueBank](https://img.shields.io/badge/BlueBank-name-blue.svg)](http://BlueBank.url.com)
+[![BlueBank](https://img.shields.io/badge/HelpBruce-name-blue.svg)](http://BlueBank.url.com)
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/jonaslucenafilho/BlueBankPanAcademy/pulls)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md)
@@ -340,6 +340,6 @@ Breve descrição dos endpoints da aplicação.
     <td align="center"><a href="https://github.com/BrunoPogianMallta"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/BrunoPogianMallta" width="100px;" alt=""/><br /><sub><b>Bruno Pogian Mallta</b></sub></a><br /><a href="https://github.com/BrunoPogianMallta" title="Bruno Pogian Mallta"></a>
     </td>
     <td align="center"><a href="https://github.com/jhonlucassilva10"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/jhonlucassilva10" width="100px;" alt=""/><br /><sub><b>Jhon Lucas</b></sub></a><br /><a href="https://github.com/jhonlucassilva10" title="Jhon Lucas"></a></td>
-    <td align="center"><a href="https://github.com/jonaslucenafilho"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/jonaslucenafilho" width="100px;" alt=""/><br /><sub><b>Giova...</b></sub></a><br /><a href="https://github.com/jonaslucenafilho" title="Jonas Lucena"></a></td>
+    <td align="center"><a href="https://github.com/GiovanaBorges"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/GiovanaBorges" width="100px;" alt=""/><br /><sub><b>Giovana Borges</b></sub></a><br /><a href="https://github.com/GiovanaBorges" title="Giovana Borges"></a></td>
   </tr>
 </table>
