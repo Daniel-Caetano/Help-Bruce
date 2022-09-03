@@ -3,7 +3,7 @@
   <img align="center" src="https://github.com/jonaslucenafilho/BlueBankPanAcademy/blob/main/assets/BlueBank_IMG.jpg" width="800px" />
 </p> -->
 
-![dscatalog-catalog](https://github.com/Daniel-Caetano/Help-Bruce/blob/main/assets/helpbruce.gif)
+![dscatalog-catalog](https://github.com/Daniel-Caetano/Help-Bruce/blob/develop/assets/helpbruce.gif)
 
 <!-- <h1 align="center">Helpe Bruce</h1> -->
 
