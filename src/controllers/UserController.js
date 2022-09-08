@@ -6,10 +6,12 @@ class UserController {
     console.log(user);
     return res.json(user);
   }
+
   async index(req, res) {
     const user = await User.findAll();
     return res.json(user);
   }
+
   async update(req, res) {
     let user = await User.findByPk(req.params.id);
     user = await user.update(req.body);
