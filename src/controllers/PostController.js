@@ -8,7 +8,9 @@ class PostController {
     }
 
     async index(req, res){
-        const post = await Post.findAll(req.body);
+        const post = await Post.findAll({
+            include:["comments"] 
+        });
         console.log(post);
         return res.json(post);
     }

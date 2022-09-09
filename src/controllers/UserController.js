@@ -19,13 +19,15 @@ class UserController {
     user = await user.update(req.body);
     return res.json(user);
   }
+  
   async delete(req, res) {
     let user = await User.findByPk(req.params.id);
     user = await user.destroy(req.body);
     return res.json(User);
   }
+
   async show(req, res) {
-    let user = await User.findByPk(req.params.id);
+    let user = await User.findByPk(req.params.id, {include:["posts"]});
     return res.json(user);
   }
 }

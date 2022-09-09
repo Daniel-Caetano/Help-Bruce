@@ -1,6 +1,7 @@
 const Sequelize = require("sequelize");
 
 const sequelize = require("../database");
+const Comment = require("./comment");
 
 const Post = sequelize.define(
   "post",
@@ -32,5 +33,7 @@ const Post = sequelize.define(
     tableName: "post",
   }
 );
+
+Post.hasMany(Comment, { as: "comments" });
 
 module.exports = Post;

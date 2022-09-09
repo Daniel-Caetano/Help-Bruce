@@ -14,6 +14,22 @@ const Comment = sequelize.define(
     description: {
       type: Sequelize.STRING,
       allowNull: false,
+    },
+    post_id: {
+      type: Sequelize.DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "post",
+        key: "id"
+      }
+    },
+    user_id: {
+      type: Sequelize.DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: "user",
+        key: "id"
+      }
     }
   },
   {
