@@ -14,7 +14,15 @@ module.exports = {
       description: {
         type: Sequelize.DataTypes.STRING,
         allowNull: false,
-      }
+      },
+      user_id: {
+        type: Sequelize.DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model: "user",
+          key: "id"
+        }
+      },
     });
   },
   down: (queryInterface, Sequelize) => {
