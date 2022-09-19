@@ -11,6 +11,12 @@ module.exports = {
         type: Sequelize.DataTypes.STRING,
         allowNull: false,
       },
+      createdAt: {
+        type: Sequelize.DataTypes.DATE
+      },
+      UpdatedAt: {
+        type: Sequelize.DataTypes.DATE
+      }
     });
   },
   down: (queryInterface, Sequelize) => {

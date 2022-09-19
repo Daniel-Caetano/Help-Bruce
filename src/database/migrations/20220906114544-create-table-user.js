@@ -30,6 +30,12 @@ module.exports = {
       green_star: {
         type: Sequelize.DataTypes.INTEGER,
       },
+      createdAt: {
+        type: Sequelize.DataTypes.DATE
+      },
+      UpdatedAt: {
+        type: Sequelize.DataTypes.DATE
+      }
     });
   },
   down: (queryInterface, Sequelize) => {

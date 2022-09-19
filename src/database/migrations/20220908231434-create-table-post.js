@@ -23,6 +23,12 @@ module.exports = {
           key: "id"
         }
       },
+      createdAt: {
+        type: Sequelize.DataTypes.DATE
+      },
+      UpdatedAt: {
+        type: Sequelize.DataTypes.DATE
+      }
     });
   },
   down: (queryInterface, Sequelize) => {

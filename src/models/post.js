@@ -34,6 +34,4 @@ const Post = sequelize.define(
   }
 );
 
-Post.hasMany(Comment, { as: "comments" });
-
 module.exports = Post;

@@ -42,7 +42,4 @@ const User = sequelize.define(
   }
 );
 
-User.hasMany(Post, { as: "posts" });
-User.hasMany(Comment, { as: "comments" });
-
 module.exports = User;
