@@ -16,6 +16,8 @@ routes.delete("/users/:id", UserController.delete); //deletar
 //Post
 routes.post("/post", PostController.store); //criar
 routes.get("/post", PostController.index); //listar todos
+routes.put("/post/:id", PostController.update); //atualizar
+routes.delete("/post/:id", PostController.delete); //deletar
 
 //Category
 routes.get("/category", CategoryController.index); //listar todos
@@ -23,5 +25,7 @@ routes.get("/category", CategoryController.index); //listar todos
 //Comment
 routes.post("/comment", CommentController.store); //criar
 routes.get("/comment", CommentController.index); //listar todos
+routes.put("/comment/:id", CommentController.update); //atualizar
+routes.delete("/comment/:id", CommentController.delete); //deletar
 
 export default routes;

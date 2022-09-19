@@ -14,6 +14,18 @@ class PostController {
         console.log(post);
         return res.json(post);
     }
+
+    async update(req, res) {
+        let post = await Post.findByPk(req.params.id);
+        post = await post.update(req.body);
+        return res.json(post);
+      }
+    
+    async delete(req, res) {
+        let post = await Post.findByPk(req.params.id);
+        post = await post.destroy(req.body);
+        return res.json(Post);
+      }
 }
 
 export default new PostController();
