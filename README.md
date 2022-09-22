@@ -1,8 +1,4 @@
 <!--
-<p align="center">
-  <img align="center" src="https://github.com/jonaslucenafilho/BlueBankPanAcademy/blob/main/assets/BlueBank_IMG.jpg" width="800px" />
-</p> -->
-
 ![dscatalog-catalog](https://github.com/Daniel-Caetano/Help-Bruce/blob/develop/assets/helpbruce.gif)
 
 <!-- <h1 align="center">Helpe Bruce</h1> -->
@@ -21,7 +17,6 @@
 	<a href="#gestao-do-projeto">Gestão do Projeto</a> •
 	<a href="#versionamento">Versionamento do Código</a> •
 	<a href="#arquitetura">Arquitetura do Projeto</a> •
-	<a href="#aws-deploy">AWS e Deploy</a> •
 	<a href="#documentacao">Documentação</a> •
 	<a href="#tecnologias-dependencias">Tecnologias e Dependências</a> •
 	<a href="#desenvolvedores">Desenvolvedores</a> •
@@ -305,7 +300,6 @@ DELETE /comments/{id}
 
 <table align="center">
   <tr>
-    <td align="center"><a href="https://github.com/Daniel-Caetano"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/Daniel-Caetano" width="100px;" alt=""/><br /><sub><b>Daniel Caetano</b></sub></a><br /><a href="https://github.com/Daniel-Caetano" title="Daniel Caetano"></a></td>
     <td align="center"><a href="https://github.com/diegomarins33"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/diegomarins33" width="100px;" alt=""/><br /><sub><b>Diego Marins</b></sub></a><br /><a href="https://github.com/diegomarins33" title="Diego Marins"></a>
     </td>
     <td align="center"><a href="https://github.com/BrunoPogianMallta"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/BrunoPogianMallta" width="100px;" alt=""/><br /><sub><b>Bruno Pogian Mallta</b></sub></a><br /><a href="https://github.com/BrunoPogianMallta" title="Bruno Pogian Mallta"></a>
