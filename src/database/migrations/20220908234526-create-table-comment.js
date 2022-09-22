@@ -13,26 +13,27 @@ module.exports = {
       },
       post_id: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: false,
         references: {
-          model: "post",
-          key: "id"
-        }
+          model: "Post",
+          key: "id",
+        },
       },
       user_id: {
         type: Sequelize.DataTypes.INTEGER,
-        allowNull: false,
         references: {
-          model: "user",
-          key: "id"
-        }
+          model: "User",
+          key: "id",
+        },
+      },
+      green_star: {
+        type: Sequelize.DataTypes.BOOLEAN,
       },
       createdAt: {
-        type: Sequelize.DataTypes.DATE
+        type: Sequelize.DataTypes.DATE,
       },
       UpdatedAt: {
-        type: Sequelize.DataTypes.DATE
-      }
+        type: Sequelize.DataTypes.DATE,
+      },
     });
   },
   down: (queryInterface, Sequelize) => {

@@ -340,6 +340,5 @@ Breve descrição dos endpoints da aplicação.
     <td align="center"><a href="https://github.com/BrunoPogianMallta"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/BrunoPogianMallta" width="100px;" alt=""/><br /><sub><b>Bruno Pogian Mallta</b></sub></a><br /><a href="https://github.com/BrunoPogianMallta" title="Bruno Pogian Mallta"></a>
     </td>
     <td align="center"><a href="https://github.com/jhonlucassilva10"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/jhonlucassilva10" width="100px;" alt=""/><br /><sub><b>Jhon Lucas</b></sub></a><br /><a href="https://github.com/jhonlucassilva10" title="Jhon Lucas"></a></td>
-    <td align="center"><a href="https://github.com/GiovanaBorges"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/GiovanaBorges" width="100px;" alt=""/><br /><sub><b>Giovana Borges</b></sub></a><br /><a href="https://github.com/GiovanaBorges" title="Giovana Borges"></a></td>
   </tr>
 </table>

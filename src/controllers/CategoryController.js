@@ -1,12 +1,11 @@
-import Category from "../models/category";
+const { Category } = require("../models");
 
-class CategoryController {
+const CategoryController = {
+  async index(req, res) {
+    const category = await Category.findAll(req.body);
+    console.log(category);
+    return res.json(category);
+  },
+};
 
-    async index(req, res){
-        const category = await Category.findAll(req.body);
-        console.log(category);
-        return res.json(category);
-    }
-}
-
-export default new CategoryController();
+module.exports = CategoryController;

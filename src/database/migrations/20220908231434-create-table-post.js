@@ -17,18 +17,25 @@ module.exports = {
       },
       user_id: {
         type: Sequelize.DataTypes.INTEGER,
+        references: {
+          model: "User",
+          key: "id",
+        },
+      },
+      category_id: {
+        type: Sequelize.DataTypes.INTEGER,
         allowNull: false,
         references: {
-          model: "user",
-          key: "id"
-        }
+          model: "Category",
+          key: "id",
+        },
       },
       createdAt: {
-        type: Sequelize.DataTypes.DATE
+        type: Sequelize.DataTypes.DATE,
       },
       UpdatedAt: {
-        type: Sequelize.DataTypes.DATE
-      }
+        type: Sequelize.DataTypes.DATE,
+      },
     });
   },
   down: (queryInterface, Sequelize) => {

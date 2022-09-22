@@ -1,26 +1,12 @@
-import express from "express";
-import routes from "./src/routes";
-import cors from "cors";
-//import "./src/config/database";
+const express = require("express");
+const routes = require("./src/routes");
+const cors = require("cors");
 
-//Criamos uma classe para trabalhar com apenas uma instancia do server
-class App {
-  constructor() {
-    this.server = express();
-    this.middlewares();
-    this.routes();
-  }
+const app = express();
 
-  //Onde será configurado nossas rotas
-  routes() {
-    this.server.use(routes);
-  }
+app.use(routes);
+app.use(express.json());
 
-  //Se ocorrerá algum tipo de middleware na aplicação
-  middlewares() {
-    this.server.use(cors());
-    this.server.use(express.json());
-  }
-}
+app.use(cors());
 
-export default new App().server;
+module.exports = app;

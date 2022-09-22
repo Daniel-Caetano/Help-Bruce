@@ -1,8 +1,8 @@
-import { Router } from "express";
-import UserController from "./controllers/UserController";
-import PostController from "./controllers/PostController";
-import CategoryController from "./controllers/CategoryController";
-import CommentController from "./controllers/CommentController";
+const { Router } = require("express");
+const UserController = require("./controllers/UserController");
+const PostController = require("./controllers/PostController");
+const CategoryController = require("./controllers/CategoryController");
+const CommentController = require("./controllers/CommentController");
 
 const routes = Router();
 
@@ -28,4 +28,4 @@ routes.get("/comment", CommentController.index); //listar todos
 routes.put("/comment/:id", CommentController.update); //atualizar
 routes.delete("/comment/:id", CommentController.delete); //deletar
 
-export default routes;
+module.exports = routes;

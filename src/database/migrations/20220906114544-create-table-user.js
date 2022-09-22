@@ -31,11 +31,11 @@ module.exports = {
         type: Sequelize.DataTypes.INTEGER,
       },
       createdAt: {
-        type: Sequelize.DataTypes.DATE
+        type: Sequelize.DataTypes.DATE,
       },
       UpdatedAt: {
-        type: Sequelize.DataTypes.DATE
-      }
+        type: Sequelize.DataTypes.DATE,
+      },
     });
   },
   down: (queryInterface, Sequelize) => {

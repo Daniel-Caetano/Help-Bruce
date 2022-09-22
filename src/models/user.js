@@ -1,44 +1,41 @@
-const Sequelize = require("sequelize");
+const db = require("../database");
+const { DataTypes } = require("sequelize");
 
-const sequelize = require("../database");
-const Post = require("./post");
-const Comment = require("./comment")
-
-const User = sequelize.define(
-  "user",
+const User = db.define(
+  "User",
   {
     id: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
       primaryKey: true,
       autoIncrement: true,
-      allowNull: false,
     },
     nome: {
-      type: Sequelize.STRING,
-      allowNull: false,
-    },
-    senha: {
-      type: Sequelize.STRING,
-      allowNull: false,
+      type: DataTypes.STRING,
     },
     email: {
-      type: Sequelize.STRING,
-      allowNull: false,
+      type: DataTypes.STRING,
+    },
+    senha: {
+      type: DataTypes.STRING,
     },
     linkedin: {
-      type: Sequelize.STRING,
-      allowNull: false,
+      type: DataTypes.STRING,
     },
     github: {
-      type: Sequelize.STRING,
-      allowNull: false,
+      type: DataTypes.STRING,
     },
     green_star: {
-      type: Sequelize.INTEGER,
+      type: DataTypes.INTEGER,
+    },
+    createdAt: {
+      type: DataTypes.DATE,
+    },
+    updatedAt: {
+      type: DataTypes.DATE,
     },
   },
   {
-    tableName: "user",
+    tableName: "User",
   }
 );
 
