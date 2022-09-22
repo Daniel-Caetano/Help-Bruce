@@ -44,7 +44,7 @@ const UsuarioController = {
 
   async update(req, res) {
     const { id } = req.params;
-    const { nome, email, linkedin, github } = req.body;
+    const { nome, email, senha, linkedin, github } = req.body;
 
     if (!id) return res.status(400).json("id não enviado");
 
@@ -52,6 +52,7 @@ const UsuarioController = {
       {
         nome,
         email,
+        senha,
         linkedin,
         github,
       },
