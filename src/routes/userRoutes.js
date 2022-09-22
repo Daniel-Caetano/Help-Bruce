@@ -15,6 +15,10 @@ routes.get("/users/:id", auth, usuariosController.show);
 routes.put("/users/:id", auth, userUpdateValidation, usuariosController.update);
 routes.delete("/users/:id", auth, usuariosController.delete);
 
-routes.post("/users/registerstar", auth, greenStarController.register);
+routes.post(
+  "/users/registerstar/:comment_id",
+  auth,
+  greenStarController.register
+);
 
 module.exports = routes;

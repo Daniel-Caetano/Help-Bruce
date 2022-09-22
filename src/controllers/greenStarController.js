@@ -5,7 +5,7 @@ const GreenStarController = {
   async register(req, res) {
     const { id } = req.auth;
 
-    const { comment_id } = req.body;
+    const { comment_id } = req.params;
 
     const comentario = await Comment.findByPk(comment_id);
 
