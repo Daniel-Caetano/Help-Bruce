@@ -43,14 +43,6 @@
 <p text-align="justify"> &emsp;&emsp;&emsp;A gestão do projeto foi feita através do método Kanban, que consiste em uma forma de gestão visual de projetos, permitindo às equipes visualizar melhor a sua carga e fluxo de trabalho. Foi utilizada a plataforma <a href="https://www.atlassian.com/br/software/trello">Trello</a> para criação do quadro Kanban. Dessa forma, o trabalho ficou exibido em um quadro de projetos organizado por colunas. O design das colunas do quadro Kanban, seguiu a seguinte lógica: 
 </p>
 
-<p text-align="justify"> &emsp;&emsp;&emsp;Afim de priorizar quais tarefas deveriam ser implementadas de forma mais urgente lançamos mão de etiquetas de urgência, as quais iam prioridade alta até a baixa, passando pela média. Os cards continham informações que foram anteriormente acordadas pela equipe, para que dessa forma a evolução de cada tarefa ficasse visível para todos. E a medida que o desenvolvimento fosse evoluindo os cartões
-eram transicionados até chegarem a coluna de conclusão.
-</p>
-
-<p align="center">  
-  <img align="center" src="https://github.com/jonaslucenafilho/BlueBankPanAcademy/blob/main/assets/card1.png" width="400px" />
-	 <img align="center" src="https://github.com/jonaslucenafilho/BlueBankPanAcademy/blob/main/assets/card2.png" width="400px" />
-</p>
 
 <h1 id="versionamento">
 <img src="https://img.icons8.com/officel/30/000000/compare-git.png"/>
@@ -88,14 +80,8 @@ eram transicionados até chegarem a coluna de conclusão.
   Documentação
 </h1>
 
-<p text-align="justify"> &emsp;&emsp;&emsp;Foi utilizado o insomnia para criação da documentação automática da API. A documentação oficial com descrição detalhada dos endpoints, classes e respostas pode ser encontrada abaixo:
+<p text-align="justify"> &emsp;&emsp;&emsp;Foi utilizado o insomnia para criação da documentação automática da API. 
 </p>
-
-<a href="https://app.swaggerhub.com/apis-docs/fhilips/BlueBankApi/1.0.0#">Documentação Oficial</a>
-
-A collection do insomnia atualizada pode ser importada no link:
-
-<a href="https://www.getpostman.com/collections/55d368860d8189d4cfcb">Postman Collection</a>
 
 ### Api Endpoints
 
@@ -173,76 +159,126 @@ DELETE /users/{id}
 | :-------- | :-------- | :------------------------------------------ |
 | `id `     | `integer` | **Requerido**. id do usuário a ser removido |
 
+</details>
 <details>
   <summary>Post Endpoints</summary>
  <br>  
   
-  Retorna uma lista de contas 
+  Cadastra um novo post
   ``` ruby
-  GET /v1/contas
+  POST /post
   ```   
-  Retorna uma lista de clientes
-  ``` ruby
-  GET /v1/clientes
-  ```  
-  Salva um novo cliente
-  ``` ruby
-  POST /v1/clientes
-  ``` 
-  Retorna um cliente a partir do id informado
-  ``` ruby
-  GET /v1/clientes/{id}
-  ```
-  Atualiza um cliente a partir do id informado
-  ``` ruby
-  PUT /v1/clientes/{id} 
-  ```
-  
+  | Parametro      | Tipo     | Descrição                                        |
+  | :---           | :---     | :-------------------------------                 |
+  | `title `       | `string` | **Requerido**. Titulo do problema do usuário     |
+  | `description ` | `string` | **Requerido**.  Descrição do problema do usuário |	
+  | `category_id ` | `integer`| **Requerido**. Id da categoria do problema       |
+
+
+Retorna uma lista de posts
+
+```ruby
+GET /posts
+```
+
+Retorna um único post a partir do id
+
+```ruby
+GET /posts/{id}
+```
+
+| Parametro | Tipo      | Descrição                                       |
+| :-------- | :-------- | :---------------------------------------------- |
+| `id `     | `integer` | **Requerido**. Id do post que será procurado    |
+
+Atualiza os dados de um post a partir do id
+
+```ruby
+PUT /posts/{id}
+```
+
+| Parametro     | Tipo      | Descrição                                 |
+| :----------   | :-------- | :-----------------------------------------|
+| `id `         | `integer` | **Requerido**.Id do post a ser atualizado |
+| `title `      | `string`  | **Opcional**. Titulo do post              |
+| `description `| `string`  | **Opcional**. Descrição do post           |
+
+
+Deleta um post a partir do id
+
+```ruby
+DELETE /posts/{id}
+```
+
+| Parametro | Tipo      | Descrição                                   |
+| :-------- | :-------- | :------------------------------------------ |
+| `id `     | `integer` | **Requerido**. id do post a ser removido    |
+
 </details>
 
 <details>
   <summary>Comentário Endpoints</summary>
  <br>  
   
-  Retorna uma lista de gerentes 
+   Cadastra um novo comentário
   ``` ruby
-  GET /v1/gerentes
+  POST /comments
   ```   
-  Salva um novo gerente
-  ``` ruby
-  POST /v1/gerentes
-  ``` 
-  Retorna um gerente a partir do id informado
-  ``` ruby
-  GET /v1/gerentes/{id}
-  ```
-  Atualiza um gerente a partir do id informado
-  ``` ruby
-  PUT /v1/gerentes/{id} 
-  ```
-  
+  | Parametro      | Tipo     | Descrição                                        |
+  | :---           | :---     | :-------------------------------                 |
+  | `description ` | `string` | **Requerido**. comentário a ser realizado |	
+  | `post_id ` | `integer`| **Requerido**. Id do post que vai receber o comentário    |
+
+
+Retorna uma lista de comments
+
+```ruby
+GET /comments
+```
+
+Retorna um único comentário a partir do id
+
+```ruby
+GET /comments/{id}
+```
+
+| Parametro | Tipo      | Descrição                                       |
+| :-------- | :-------- | :---------------------------------------------- |
+| `id `     | `integer` | **Requerido**. Id do comentário que será procurado    |
+
+Atualiza os dados de um comentário a partir do id
+
+```ruby
+PUT /comments/{id}
+```
+
+| Parametro     | Tipo      | Descrição                                 |
+| :----------   | :-------- | :-----------------------------------------|
+| `id `         | `integer` | **Requerido**.Id do comentário a ser atualizado |
+| `description `      | `string`  | **Opcional**.  Nova descrição no comentário |
+
+Deleta um comentário a partir do id
+
+```ruby
+DELETE /comments/{id}
+```
+
+| Parametro | Tipo      | Descrição                                         |
+| :-------- | :-------- | :------------------------------------------       |
+| `id `     | `integer` | **Requerido**. id do comentário a ser removido    |
 </details>
 
 <details>
   <summary>Green Star Endpoints</summary>
  <br>  
-  
-  Retorna uma lista de agencias 
-  ``` ruby
-  GET /v1/agencias
-  ```   
-  Salva uma nova agencia
-  ``` ruby
-  POST /v1/agencias
-  ``` 
+ 
   Retorna uma agencia a partir do id informado
   ``` ruby
-  GET /v1/agencias/{id}
+  POST /users/registerStar
   ```
-  Atualiza uma agencia a partir do id informado
-  ``` ruby
-  PUT /v1/agencias/{id} 
-  ```
+  | Parametro | Tipo      | Descrição                                         |
+  | :-------- | :-------- | :------------------------------------------       |
+  | `id `     | `integer` | **Requerido**. id do comentário que vai receber a Green Star    |
   
 </details>
 
