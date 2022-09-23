@@ -4,7 +4,11 @@ const cors = require("cors");
 const app = express();
 
 app.use(routes);
-app.use(express.json());
+app.use(
+  express.json({
+    limit: "10kb",
+  })
+);
 
 app.use(cors());
 
