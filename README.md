@@ -36,14 +36,6 @@
 <p align="justify"> &emsp;&emsp;&emsp;Projeto final desenvolvido para o Dev For Tech de aceleração NodeJs, uma parceria entre a Acate e a GamaAcademy. O HelpBruce tem por objetivo aproximar a comunidade dev Gama Academy, nela um usuário poderá criar um post descrevendo um problema e outros usuários poderão responder auxiliando na solução do mesmo, desta forma a aplicação vai facilitar a troca de conhecimento e a criação de network, fazendo com que todos cresçam juntos.
 </p>
 
-<h1 id="gestao-do-projeto">
-	<img height="28" src="https://img.icons8.com/fluency/50/000000/project.png"/>
-  Gestão do Projeto
-</h1>
-
-<p text-align="justify"> &emsp;&emsp;&emsp;A gestão do projeto foi feita através do método Kanban, que consiste em uma forma de gestão visual de projetos, permitindo às equipes visualizar melhor a sua carga e fluxo de trabalho. Foi utilizada a plataforma <a href="https://www.atlassian.com/br/software/trello">Trello</a> para criação do quadro Kanban.
-</p>
-
 <h1 id="instalacao-do-projeto">
 <img src="https://img.icons8.com/color/software-installer.png"/>
   Instalação do Projeto
@@ -57,6 +49,14 @@
 - Execute os seeds -> npx sequelize-cli db:seed:all
 - Agora é só usar o comando -> yarn dev
 - Agora a api está sendo executada :)
+
+<h1 id="gestao-do-projeto">
+	<img height="28" src="https://img.icons8.com/fluency/50/000000/project.png"/>
+  Gestão do Projeto
+</h1>
+
+<p text-align="justify"> &emsp;&emsp;&emsp;A gestão do projeto foi feita através do método Kanban, que consiste em uma forma de gestão visual de projetos, permitindo às equipes visualizar melhor a sua carga e fluxo de trabalho. Foi utilizada a plataforma <a href="https://www.atlassian.com/br/software/trello">Trello</a> para criação do quadro Kanban.
+</p>
 
 <h1 id="versionamento">
 <img src="https://img.icons8.com/officel/30/000000/compare-git.png"/>
@@ -188,7 +188,6 @@ DELETE /users/{id}
   | `description ` | `string` | **Requerido**.  Descrição do problema do usuário |	
   | `category_id ` | `integer`| **Requerido**. Id da categoria do problema       |
 
-
 Retorna uma lista de posts
 
 ```ruby
@@ -201,9 +200,9 @@ Retorna um único post a partir do id
 GET /posts/{id}
 ```
 
-| Parametro | Tipo      | Descrição                                       |
-| :-------- | :-------- | :---------------------------------------------- |
-| `id `     | `integer` | **Requerido**. Id do post que será procurado    |
+| Parametro | Tipo      | Descrição                                    |
+| :-------- | :-------- | :------------------------------------------- |
+| `id `     | `integer` | **Requerido**. Id do post que será procurado |
 
 Atualiza os dados de um post a partir do id
 
@@ -211,12 +210,11 @@ Atualiza os dados de um post a partir do id
 PUT /posts/{id}
 ```
 
-| Parametro     | Tipo      | Descrição                                 |
-| :----------   | :-------- | :-----------------------------------------|
-| `id `         | `integer` | **Requerido**.Id do post a ser atualizado |
-| `title `      | `string`  | **Opcional**. Titulo do post              |
-| `description `| `string`  | **Opcional**. Descrição do post           |
-
+| Parametro      | Tipo      | Descrição                                 |
+| :------------- | :-------- | :---------------------------------------- |
+| `id `          | `integer` | **Requerido**.Id do post a ser atualizado |
+| `title `       | `string`  | **Opcional**. Titulo do post              |
+| `description ` | `string`  | **Opcional**. Descrição do post           |
 
 Deleta um post a partir do id
 
@@ -224,9 +222,9 @@ Deleta um post a partir do id
 DELETE /posts/{id}
 ```
 
-| Parametro | Tipo      | Descrição                                   |
-| :-------- | :-------- | :------------------------------------------ |
-| `id `     | `integer` | **Requerido**. id do post a ser removido    |
+| Parametro | Tipo      | Descrição                                |
+| :-------- | :-------- | :--------------------------------------- |
+| `id `     | `integer` | **Requerido**. id do post a ser removido |
 
 </details>
 
@@ -243,7 +241,6 @@ DELETE /posts/{id}
   | `description ` | `string` | **Requerido**. comentário a ser realizado |	
   | `post_id ` | `integer`| **Requerido**. Id do post que vai receber o comentário    |
 
-
 Retorna uma lista de comments
 
 ```ruby
@@ -256,9 +253,9 @@ Retorna um único comentário a partir do id
 GET /comments/{id}
 ```
 
-| Parametro | Tipo      | Descrição                                       |
-| :-------- | :-------- | :---------------------------------------------- |
-| `id `     | `integer` | **Requerido**. Id do comentário que será procurado    |
+| Parametro | Tipo      | Descrição                                          |
+| :-------- | :-------- | :------------------------------------------------- |
+| `id `     | `integer` | **Requerido**. Id do comentário que será procurado |
 
 Atualiza os dados de um comentário a partir do id
 
@@ -266,10 +263,10 @@ Atualiza os dados de um comentário a partir do id
 PUT /comments/{id}
 ```
 
-| Parametro     | Tipo      | Descrição                                 |
-| :----------   | :-------- | :-----------------------------------------|
-| `id `         | `integer` | **Requerido**.Id do comentário a ser atualizado |
-| `description `      | `string`  | **Opcional**.  Nova descrição no comentário |
+| Parametro      | Tipo      | Descrição                                       |
+| :------------- | :-------- | :---------------------------------------------- |
+| `id `          | `integer` | **Requerido**.Id do comentário a ser atualizado |
+| `description ` | `string`  | **Opcional**. Nova descrição no comentário      |
 
 Deleta um comentário a partir do id
 
@@ -277,9 +274,10 @@ Deleta um comentário a partir do id
 DELETE /comments/{id}
 ```
 
-| Parametro | Tipo      | Descrição                                         |
-| :-------- | :-------- | :------------------------------------------       |
-| `id `     | `integer` | **Requerido**. id do comentário a ser removido    |
+| Parametro | Tipo      | Descrição                                      |
+| :-------- | :-------- | :--------------------------------------------- |
+| `id `     | `integer` | **Requerido**. id do comentário a ser removido |
+
 </details>
 
 <details>
