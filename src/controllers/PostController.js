@@ -23,7 +23,7 @@ const PostController = {
 
   async show(req, res) {
     const { id } = req.params;
-    const post = await Post.findByPk(id);
+    const post = await Post.findByPk(id, { include: Comment });
     return res.status(200).json(post);
   },
 
