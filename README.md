@@ -19,6 +19,7 @@
 
 <p align="center">
 	• <a href="#descricao">Descrição</a> •
+  <a href="#instalacao-do-projeto">Instalação do projeto</a> •
 	<a href="#gestao-do-projeto">Gestão do Projeto</a> •
 	<a href="#versionamento">Versionamento do Código</a> •
 	<a href="#arquitetura">Arquitetura do Projeto</a> •
@@ -43,6 +44,19 @@
 <p text-align="justify"> &emsp;&emsp;&emsp;A gestão do projeto foi feita através do método Kanban, que consiste em uma forma de gestão visual de projetos, permitindo às equipes visualizar melhor a sua carga e fluxo de trabalho. Foi utilizada a plataforma <a href="https://www.atlassian.com/br/software/trello">Trello</a> para criação do quadro Kanban.
 </p>
 
+<h1 id="instalacao-do-projeto">
+<img src="https://img.icons8.com/color/software-installer.png"/>
+  Instalação do Projeto
+</h1>
+
+- Clone o repositório -> git clone https://github.com/Daniel-Caetano/Help-Bruce.git
+- Instale as dependências -> npm install
+- Crie um banco de dados Mysql com o nome "db_help_bruce" e os dados do arquivo src/config/database.json
+- Instale o sequelize-cli -> npm install --save-dev sequelize-cli
+- Execute as migrations -> npx sequelize-cli db:migrate
+- Execute os seeds -> npx sequelize-cli db:seed:all
+- Agora é só usar o comando -> yarn dev
+- Agora a api está sendo executada :)
 
 <h1 id="versionamento">
 <img src="https://img.icons8.com/officel/30/000000/compare-git.png"/>
